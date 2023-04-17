@@ -32,7 +32,7 @@
 
   </style>
 
-  <script type="module" crossorigin src="/assets/index-401a770a.js"></script>
+  <script type="module" crossorigin src="/assets/index-e7c9e549.js"></script>
   <link rel="stylesheet" href="/assets/index-d8b5c9ea.css">
 </head>
 
@@ -55,8 +55,8 @@
 
     // A $( document ).ready() block.
     $(document).ready(function () {
-      console.log("ready!");
-
+      console.log("ready !");
+      document.getElementById("footer").innerText = __COMMIT_HASH__;
       // $("#slides").shape({ duration: 1000, });
 
     });
@@ -70,7 +70,9 @@
 
   
 </body>
-
+<div class="ui footer">
+  <div id="footer"></div>
+</div>
 
 
 </html>
