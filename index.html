@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/images/ssk.jpg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSS Study demo</title>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+    integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" type="text/css" href="static/css/semantic.min.css"> -->
+  <!-- <script src="static/js/semantic.min.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+    integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-material-ui@7.0.0-beta.3/themes/svelte.min.css"
+    media="(prefers-color-scheme: light)" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-material-ui@7.0.0-beta.3/themes/svelte-dark.min.css"
+    media="screen and (prefers-color-scheme: dark)" />
+  <style>
+
+  </style>
+
+  <script type="module" crossorigin src="/assets/index-ec1430a1.js"></script>
+  <link rel="stylesheet" href="/assets/index-d8b5c9ea.css">
+</head>
+
+<body>
+  <!-- <img class="ui  avatar image" src="/static/images/ssk.jpg" alt="ssk image is here" /> -->
+  <!-- <span>Sendil</span> -->
+
+  <!-- <div class="ui action input">
+    <input type="password" name="pwd" value="">
+    <button class="ui button" id="pwd">Login</button>
+  </div> -->
+
+
+
+  <div class="ui  segment">
+    <div id="app"></div>
+  </div>
+
+  <script>
+    console.log("Loaded ... shapes");
+    document.onload = () => {
+      console.log("Loaded ... shape ", $(".shape"));
+
+    }
+    // A $( document ).ready() block.
+    $(document).ready(function () {
+      console.log("ready!");
+
+      $("#slides").shape({ duration: 1000, });
+
+    });
+
+    function slideme() {
+      console.log("chaning...")
+      // $('.shape').shape('set stage size', "300px", "1045px");
+
+      $('#slides').shape('flip left');
+
+
+
+      // style="cursor: grab;"
+    }
+  </script>
+
+  <!-- <fss-plot style="background-color: rgb(218, 17, 17);">fss-plot Plots will be rendered here</fss-plot> -->
+  <!-- <fss-plot style="background-color: rgba(17, 218, 94, 0.699);">FSS Plots will be rendered here</fss-plot> -->
+  
+</body>
+
+<!-- 
+<script type="module">
+  import { Inspector } from "https://unpkg.com/@observablehq/inspector?module";
+  import * as Plot from "@observablehq/plot";
+
+  var x = [10, 30, 330]
+  var div = document.createElement("div")
+  // div.style = "width:500px;height:400px"
+  // document.getElementById("showoff").append(div)
+  var ins = new Inspector(div)
+  console.log("ins ", ins)
+  var myplot = Plot.ruleX([30, 50]).plot({ width: 200 })
+  // console.log("myplot ", x)
+  // ins.fulfilled(myplot);
+  ins.fulfilled(x);
+
+  // import * as wiless from "/static/js/functions.js"
+  // console.log("Modules exported ", wiless)
+  // import { get } from "svelte/store"
+  // console.log(get(wiless.password))
+  // wiless.password.set("sendil")
+  import app from "/src/main.js"
+  // console.log("I FOUND THE APP", app)
+
+  // document.getElementById("pwd").onclick = (e) => {
+  //   var p = document.getElementsByName("pwd")[0].value
+  //   wiless.password.set(p)
+  //   app.Render("app")
+  //   console.log("pwd", document.getElementsByName("pwd")[0].value)
+  //   // app.Render("app")
+  // }
+
+</script> -->
+
+
+</html>
