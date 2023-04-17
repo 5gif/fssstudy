@@ -32,7 +32,7 @@
 
   </style>
 
-  <script type="module" crossorigin src="/assets/index-ec1430a1.js"></script>
+  <script type="module" crossorigin src="/assets/index-401a770a.js"></script>
   <link rel="stylesheet" href="/assets/index-d8b5c9ea.css">
 </head>
 
@@ -52,69 +52,25 @@
   </div>
 
   <script>
-    console.log("Loaded ... shapes");
-    document.onload = () => {
-      console.log("Loaded ... shape ", $(".shape"));
 
-    }
     // A $( document ).ready() block.
     $(document).ready(function () {
       console.log("ready!");
 
-      $("#slides").shape({ duration: 1000, });
+      // $("#slides").shape({ duration: 1000, });
 
     });
 
     function slideme() {
-      console.log("chaning...")
-      // $('.shape').shape('set stage size', "300px", "1045px");
-
-      $('#slides').shape('flip left');
-
-
-
+      // console.log("chaning...")
+      // $('#slides').shape('flip left');
       // style="cursor: grab;"
     }
   </script>
 
-  <!-- <fss-plot style="background-color: rgb(218, 17, 17);">fss-plot Plots will be rendered here</fss-plot> -->
-  <!-- <fss-plot style="background-color: rgba(17, 218, 94, 0.699);">FSS Plots will be rendered here</fss-plot> -->
   
 </body>
 
-<!-- 
-<script type="module">
-  import { Inspector } from "https://unpkg.com/@observablehq/inspector?module";
-  import * as Plot from "@observablehq/plot";
-
-  var x = [10, 30, 330]
-  var div = document.createElement("div")
-  // div.style = "width:500px;height:400px"
-  // document.getElementById("showoff").append(div)
-  var ins = new Inspector(div)
-  console.log("ins ", ins)
-  var myplot = Plot.ruleX([30, 50]).plot({ width: 200 })
-  // console.log("myplot ", x)
-  // ins.fulfilled(myplot);
-  ins.fulfilled(x);
-
-  // import * as wiless from "/static/js/functions.js"
-  // console.log("Modules exported ", wiless)
-  // import { get } from "svelte/store"
-  // console.log(get(wiless.password))
-  // wiless.password.set("sendil")
-  import app from "/src/main.js"
-  // console.log("I FOUND THE APP", app)
-
-  // document.getElementById("pwd").onclick = (e) => {
-  //   var p = document.getElementsByName("pwd")[0].value
-  //   wiless.password.set(p)
-  //   app.Render("app")
-  //   console.log("pwd", document.getElementsByName("pwd")[0].value)
-  //   // app.Render("app")
-  // }
-
-</script> -->
 
 
 </html>
