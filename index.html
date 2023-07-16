@@ -8,51 +8,69 @@
   <title>FSS Study demo</title>
   <link rel="shortcut icon" href="">
 
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
     integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- <link rel="stylesheet" type="text/css" href="static/css/semantic.min.css"> -->
-  <!-- <script src="static/js/semantic.min.js"></script> -->
+  <script src="static/js/semantic.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
     integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <script src="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5.0.0/dist/inspector.min.js"></script>
 
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-material-ui@7.0.0-beta.3/themes/svelte.min.css"
-    media="(prefers-color-scheme: light)" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-material-ui@7.0.0-beta.3/themes/svelte-dark.min.css"
-    media="screen and (prefers-color-scheme: dark)" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-material-ui@7.0.0-beta.3/themes/svelte.min.css"
+    media="(prefers-color-scheme: light)" /> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-material-ui@7.0.0-beta.3/themes/svelte-dark.min.css"
+    media="screen and (prefers-color-scheme: dark)" /> -->
   <style>
 
   </style>
 
-  <script type="module" crossorigin src="/assets/index-4dd85165.js"></script>
-  <link rel="stylesheet" href="/assets/index-d8b5c9ea.css">
+  <script type="module" crossorigin src="/assets/index-436440ec.js"></script>
+  <link rel="stylesheet" href="/assets/index-021e1d71.css">
 </head>
 
 <body>
-  <!-- <img class="ui  avatar image" src="/static/images/ssk.jpg" alt="ssk image is here" /> -->
   <!-- <span>Sendil</span> -->
 
   <!-- <div class="ui action input">
     <input type="password" name="pwd" value="">
     <button class="ui button" id="pwd">Login</button>
   </div> -->
+  <div class="ui segments">
+    <div class="  vertical segment">
+      <div class="ui fluid image" alt="5gif banner here" style="overflow: hidden;max-height: 200px;">
+        <img src="/assets/5gmobiletowers-3fcdb14e.jpeg" alt="">
 
+        <div class="ui floated small image" style="float:right;top:0px;right: 0px;position: absolute;">
+          <img src="/assets/5gif-8280ea68.png" alt="">
 
+        </div>
+        <div class="ui floating left "
+          style="position: absolute;bottom: 0%;left: 0%;background-color: rgba(0, 0, 0, 0.231);">
+          <h1 class="ui header inverted ">IMT FSS Sharing Study Tool</h1>
+        </div>
+      </div>
 
-  <div class="ui  segment">
-    <div id="app"></div>
-    <div id="demo"></div>
+    </div>
+
+    <div class="  vertical  segment">
+
+      <div id="app"></div>
+      <!-- <div id="demo"></div> -->
+    </div>
   </div>
-
   <script>
 
     // A $( document ).ready() block.
@@ -60,6 +78,7 @@
       console.log("ready !");
       // document.getElementById("footer").innerText = __COMMIT_HASH__;
       // $("#slides").shape({ duration: 1000, });
+      $(".ui.dropdown").dropdown()
 
     });
 
