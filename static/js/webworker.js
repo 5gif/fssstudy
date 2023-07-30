@@ -1,5 +1,6 @@
-import * as turf from "@turf/turf";
-import * as d3 from "d3";
+// import * as turf from "@turf/turf";
+// import * as d3 from "d3";
+import { turf, d3 } from "./workaround.js";
 
 console.log("WEB WORKER..init()")
 let ready = false
