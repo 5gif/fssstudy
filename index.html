@@ -37,8 +37,8 @@
 
   </style>
 
-  <script type="module" crossorigin src="/assets/index-4ce3bf07.js"></script>
-  <link rel="stylesheet" href="/assets/index-72364ae8.css">
+  <script type="module" crossorigin src="/assets/index-147d53f4.js"></script>
+  <link rel="stylesheet" href="/assets/index-1b2911c2.css">
 </head>
 
 <body>
@@ -72,6 +72,18 @@
     </div>
   </div>
   <script>
+    var req = indexedDB.deleteDatabase("mapinformation");
+    req.onsuccess = function () {
+      console.log("indexedDB: Deleted database successfully");
+    };
+    req.onerror = function () {
+      console.log("indexedDB: Couldn't delete database");
+    };
+    req.onblocked = function () {
+      console.log(
+        "indexedDB: Couldn't delete database due to the operation being blocked"
+      );
+    };
 
     // A $( document ).ready() block.
     $(document).ready(function () {
